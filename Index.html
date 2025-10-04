@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenya Coastal & Jungle Tours</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f0;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background: #004620;
+      padding: 10px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    nav .menu a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav .menu a:hover {
+      color: gold;
+    }
+
+    /* Hero */
+    header {
+      background: url("1000167764.jpg") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 70, 32, 0.6);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: gold;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 50px 10%;
+    }
+
+    .about {
+      background: #e9f5ea;
+      border-left: 5px solid #004620;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .about h2 {
+      color: #004620;
+      margin-bottom: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      background: #004620;
+      color: white;
+      padding: 10px;
+    }
+
+    .card p {
+      padding: 10px;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .socials {
+      margin-top: 10px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: gold;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .socials a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="your-logo.png" alt="Kathug Guider Logo">
+    </div>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#attractions">Attractions</a>
+      <a href="#reserves">Game Reserves</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="content">
+      <h1>Kenya Coastal & Jungle Tours</h1>
+      <p>Explore Mombasa • Malindi • Lamu • Safaris • Nature & Wildlife</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about">
+      <h2>About Kathug Guider</h2>
+      <p>
+        Kathug Guider was founded to bring travelers closer to the breathtaking beauty of Kenya’s coast and jungles. 
+        From the historic streets of Mombasa, the serene beaches of Malindi, to the cultural heritage of Lamu — 
+        our agency connects you with authentic African experiences. We specialize in safaris, private tours, outdoor adventures, 
+        and wildlife explorations, all while offering the best accommodations and hospitality.
+      </p>
+    </div>
+  </section>
+
+  <!-- Attractions Section -->
+  <section id="attractions">
+    <h2>Main Tourist Attractions</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?mombasa,beach" alt="Mombasa Beach">
+        <h3>Mombasa</h3>
+        <p>Discover rich Swahili culture, Fort Jesus, and pristine white-sand beaches.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?malindi,kenya" alt="Malindi">
+        <h3>Malindi</h3>
+        <p>Home to coral reefs, marine parks, and vibrant resorts for relaxation and adventure.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?lamu,island" alt="Lamu">
+        <h3>Lamu</h3>
+        <p>Step back in time with ancient Swahili architecture, dhow sailing, and cultural charm.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?safari,kenya" alt="Safari">
+        <h3>Safari Adventures</h3>
+        <p>Experience Kenya’s wildlife up close with multi-day safari tours and private guides.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Reserves Section -->
+  <section id="reserves">
+    <h2>Kenya’s Famous Game Reserves</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?maasai-mara" alt="Maasai Mara">
+        <h3>Maasai Mara Reserve</h3>
+        <p>World-renowned for the Great Migration and home to lions, cheetahs, and wildebeests.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?tsavo" alt="Tsavo">
+        <h3>Tsavo National Park</h3>
+        <p>One of the largest game parks in the world, famous for red elephants and vast savannahs.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?amboseli" alt="Amboseli">
+        <h3>Amboseli National Park</h3>
+        <p>Known for large herds of elephants with the backdrop of Mount Kilimanjaro.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/600x400/?samburu" alt="Samburu">
+        <h3>Samburu Reserve</h3>
+        <p>A unique semi-arid reserve with rare wildlife like Grevy’s zebra and reticulated giraffes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery">
+    <h2>Game Animals of Kenya</h2>
+    <div class="gallery-grid">
+      <img src="https://source.unsplash.com/600x400/?lion,kenya" alt="Lion">
+      <img src="https://source.unsplash.com/600x400/?elephant,kenya" alt="Elephant">
+      <img src="https://source.unsplash.com/600x400/?giraffe,kenya" alt="Giraffe">
+      <img src="https://source.unsplash.com/600x400/?rhino,kenya" alt="Rhino">
+      <img src="https://source.unsplash.com/600x400/?leopard,kenya" alt="Leopard">
+      <img src="https://source.unsplash.com/600x400/?zebra,kenya" alt="Zebra">
+      <img src="https://source.unsplash.com/600x400/?cheetah,kenya" alt="Cheetah">
+      <img src="https://source.unsplash.com/600x400/?buffalo,kenya" alt="Buffalo">
+      <img src="https://source.unsplash.com/600x400/?wildebeest,kenya" alt="Wildebeest">
+      <img src="https://source.unsplash.com/600x400/?hippo,kenya" alt="Hippo">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 Kathug Guider. All rights reserved.</p>
+    <p>Contact: +254 707 709 038 | ogkathug@gmail.com</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>
